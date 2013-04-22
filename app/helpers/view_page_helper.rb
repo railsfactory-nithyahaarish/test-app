@@ -1,0 +1,2 @@
+module ViewPageHelper
+end

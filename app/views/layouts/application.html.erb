@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Magick Store</title>
+<%=stylesheet_link_tag "scaffold"%>
+<%= stylesheet_link_tag "style", :media => "all"%>
+<%javascript_include_tag :defaults%>
+<%= csrf_meta_tag%>
+</head>
+<body>
+<div menu><div id="menu-wrapper">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#">Homepage</a></li>
+				<%if !session[:user_id].blank?%>
+<li><%= link_to 'Logout', login_path, :method => :delete %></li>
+<%end%>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+
+</div><div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<h2 class="title"><link_to="store_new_path">Welcome to the Magick store  </a></h2>
+            </div>
+          <div style="clear: both;">&nbsp;</div>
+				</div>
+						
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+
+<%= yield %>
+
+</body>
+</html>

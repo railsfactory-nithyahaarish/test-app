@@ -1,0 +1,5 @@
+
+
+<p>Dear admin,
+
+New product <%=@product.title%> have been newly created.</p>

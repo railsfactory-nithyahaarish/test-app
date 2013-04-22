@@ -1,0 +1,6 @@
+Notifier#new_user_created
+
+<p>Dear <%=@user.name%>,
+ You have been registered successfully with 
+ User name <%=@user.name%>
+  </p>

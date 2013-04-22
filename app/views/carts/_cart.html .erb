@@ -1,0 +1,14 @@
+<div class="cart-title">Your cart</div>
+<table>
+<%= render(cart.line_items)%>
+<tr class= "total">
+<td colspan= "2">Total</td>
+<td class="total_cell"><%= (cart.total_price)%></td>
+</tr>
+</table>
+<%= button_to 'checkout', new_order_url, :method => :get%>
+<%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'are you sure??'%>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
