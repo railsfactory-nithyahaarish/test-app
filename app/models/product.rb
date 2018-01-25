@@ -15,7 +15,7 @@ class Product < ActiveRecord::Base
   after_create :send_email
   def send_email
    NewProductCreated.new_product_created(self).deliver 
-   p 1111111111111111111111111111
+   p 55555555555555555555555555555555555
       end
   
   end
